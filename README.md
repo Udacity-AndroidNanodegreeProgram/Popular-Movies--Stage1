@@ -25,6 +25,8 @@ This app will:
  
  Obtain a key via the following [instructions](https://www.themoviedb.org/documentation/api), and include the unique key for the build by adding the following line in line number 75 in MainActivityFragment.java file:
  
- String url = "http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=**********"; Replace ********** by your key here.
+ String url = "http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=**********"; 
+ 
+ Replace ********** by your key here.
 
  
