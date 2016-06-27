@@ -2,10 +2,15 @@
 
 Popular-Movies--Stage is the Project1 Android app for the Udacity course [Developing Android Apps: Android Fundamentals](https://www.udacity.com/course/ud853).
 In this app I have build the core experience of my movies app.
+
 This app will:
+
  + Present the user with a grid arrangement of movie posters upon launch.
+ 
  + Allows user to change sort order via a setting:
- + The sort order can be by most popular or by highest-rated.
+ 
+ + The sort order can be by most popular or by highest-rated:
+ 
  + Allowing the user to tap on a movie poster and transitioning to a details screen with additional information such as:
    + original title
    + movie poster image thumbnail
