@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shadab_hussain.popularmovies_stage1.DetailActivityFragment"
+    tools:showIn="@layout/activity_detail">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailTextView"
+        android:background="@color/colorSecondary"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/detail_heading_size"
+        android:paddingLeft="@dimen/detail_generic_spacing"
+        android:paddingStart="@dimen/detail_generic_spacing"
+        android:paddingTop="30dp"
+        android:paddingBottom="25dp"
+        android:text="Header Movie"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detailTextView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/posterImageView"
+                android:layout_marginTop="@dimen/detail_generic_spacing"
+                android:layout_marginLeft="@dimen/detail_generic_spacing"
+                android:layout_marginStart="@dimen/detail_generic_spacing"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/releaseDate"
+                android:text="7th July, 1996"
+                android:layout_alignTop="@+id/posterImageView"
+                android:layout_toRightOf="@+id/posterImageView"
+                android:layout_toEndOf="@+id/posterImageView"
+                android:layout_marginLeft="@dimen/detail_generic_spacing"
+                android:layout_marginStart="@dimen/detail_generic_spacing"
+                android:textSize="20sp"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating"
+                android:layout_alignLeft="@+id/releaseDate"
+                android:layout_alignStart="@+id/releaseDate"
+                android:layout_below="@+id/releaseDate"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"
+                android:stepSize="0.25"
+                android:layout_marginTop="@dimen/detail_generic_spacing"
+                android:rating="5.0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingTextView"
+                android:layout_below="@+id/rating"
+                android:layout_alignLeft="@+id/rating"
+                android:layout_alignStart="@+id/rating"
+                android:text="8.1/10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/overviewTextView"
+                android:layout_below="@+id/posterImageView"
+                android:layout_marginTop="@dimen/detail_generic_spacing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Some text here"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
